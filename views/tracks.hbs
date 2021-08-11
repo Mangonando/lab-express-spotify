@@ -1,13 +1,26 @@
-{{#each tracksInfo}}
-  <div>
-    <h3>{{name}}</h3>
-    <iframe
-      src="https://open.spotify.com/embed?uri={{uri}}"
-      width="300"
-      height="380"
-      frameborder="0"
-      allowtransparency="true"
-      allow="encrypted-media"
-    ></iframe>
+<div class="container">
+  <div class="row">
+    {{#each tracksInfo}}
+      <div class="album">
+        <h3>{{name}}</h3>
+        <iframe
+          src="https://open.spotify.com/embed?uri={{uri}}"
+          width="300"
+          height="380"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+    {{/each}}
   </div>
-{{/each}}
+</div>
+<style>
+.album {
+padding: 2%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+</style>
