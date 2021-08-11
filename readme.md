@@ -1,6 +1,6 @@
-#SpotiJuani
+# SpotiJuani
 
-###Try it and listen for free [here](https://spotijuani.herokuapp.com/)
+### Try it and listen for free [here](https://spotijuani.herokuapp.com/)
 
 -----------------
 
