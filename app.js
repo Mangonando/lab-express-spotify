@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const hbs = require("hbs");
 const SpotifyWebApi = require("spotify-web-api-node");
+const PORT = process.env.PORT;
 
 const app = express();
 
@@ -64,6 +65,6 @@ app.get("/tracks/:albumId", (req, res) => {
     );
 });
 
-app.listen(3000, () =>
+app.listen(PORT, () =>
   console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊")
 );
